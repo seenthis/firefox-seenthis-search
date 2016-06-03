@@ -1,0 +1,6 @@
+content  seenthis_search  chrome/content/
+skin     seenthis_search  classic/1.0  chrome/skin/
+
+overlay  chrome://browser/content/browser.xul  chrome://seenthis_search/content/overlay.xul
+style    chrome://browser/content/browser.xul  chrome://seenthis_search/skin/toolbar-button.css
+style    chrome://global/content/customizeToolbar.xul  chrome://seenthis_search/skin/toolbar-button.css
