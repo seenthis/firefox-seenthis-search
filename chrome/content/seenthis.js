@@ -10,7 +10,7 @@ var SeenthisParser = {
 			var message = thread.getElementsByTagName('message')[0];
 			bookmark.title = message.getElementsByTagName('text')[0].childNodes[0].nodeValue.split('\n')[0];
 			if (message.getElementsByTagName('text')[0].childNodes[0].nodeValue.split('\n').length > 1) {
-				bookmark.info = message.getElementsByTagName('text')[0].childNodes[0].nodeValue.substring(0,350);
+				bookmark.info = message.getElementsByTagName('text')[0].childNodes[0].nodeValue;
 			}
 			bookmark.time = message.getElementsByTagName('date')[0].childNodes[0].nodeValue;
 			var tags = message.getElementsByTagName('tag');
