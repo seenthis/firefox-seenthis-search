@@ -10,6 +10,13 @@ Download from AMO
 
 https://addons.mozilla.org/fr/firefox/addon/seenthis-search/
 
+Usage
+-----------------------
+
+After installation, go to Firefox menu, "Tools" -> "seenthis.net search".
+
+Make sure you are logged in on seenthis.net and hit the sync link to perform synchronization.
+
 Run seenthis search from source
 -----------------------
 
