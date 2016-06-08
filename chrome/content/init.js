@@ -260,7 +260,10 @@ if (database.connection.transactionInProgress) database.connection.rollbackTrans
 
   var userExtJsURL = fileHandler.getURLSpecFromFile(userExtJs);
 
-  document.write('<script type="text/javascript" src="'+ userExtJsURL +'"><\/script>');
+  var userScript = document.createElement("script");
+  userScript.type = "text\/javascript";
+  document.currentScript.parentNode.insertBefore(userScript, document.currentScript.nextSibling);
+  userScript.src = userExtJsURL;
 
   // user stylesheet
   var userCss = Components.classes["@mozilla.org/file/directory_service;1"]
@@ -283,5 +286,10 @@ if (database.connection.transactionInProgress) database.connection.rollbackTrans
 
   var userCssURL = fileHandler.getURLSpecFromFile(userCss);
 
-  document.write('<link rel="stylesheet" href="' + userCssURL + '" type="text/css" />');
+  var userCss = document.createElement("link");
+  userCss.rel = "stylesheet";
+  userCss.type = "text\/css";
+  document.currentScript.parentNode.insertBefore(userCss, document.currentScript);
+  userCss.href = userCssURL;
+
 })();
