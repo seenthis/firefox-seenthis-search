@@ -3,11 +3,6 @@ firefox-seenthis-search
 
 seenthis.net IncSearch Add-ons for Firefox
 
-This is an adaptation of https://github.com/onozaty/firefox-delicious-incsearch for seenthis.net, huge thx to onozaty for his original work :)
-
-Download from AMO
------------------------
-
 https://addons.mozilla.org/fr/firefox/addon/seenthis-search/
 
 Usage
@@ -27,6 +22,11 @@ Run seenthis search from source
 slash direction, and everyone should remember to include a closing slash and remove any
 trailing spaces.
 4. Save the file with seenthis search ID as it's name `seenthis_search@seenthis.net`
+
+Credits
+-----------------------
+
+This is an adaptation of https://github.com/onozaty/firefox-delicious-incsearch for seenthis.net, huge thx to onozaty for his original work :)
 
 License
 -----------------------
