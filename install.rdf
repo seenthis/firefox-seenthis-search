@@ -6,6 +6,7 @@
     <em:id>seenthis_search@seenthis.net</em:id>
     <em:type>2</em:type>
     <em:version>0.0.3</em:version>
+    <em:bootstrap>true</em:bootstrap>
 
     <em:targetApplication>
       <Description>
