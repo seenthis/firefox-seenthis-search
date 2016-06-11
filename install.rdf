@@ -5,13 +5,13 @@
 
     <em:id>seenthis_search@seenthis.net</em:id>
     <em:type>2</em:type>
-    <em:version>0.0.3</em:version>
+    <em:version>0.0.4</em:version>
     <em:bootstrap>true</em:bootstrap>
 
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>15.0</em:minVersion>
+        <em:minVersion>22.0</em:minVersion>
         <em:maxVersion>48.*</em:maxVersion>
       </Description>
     </em:targetApplication>
