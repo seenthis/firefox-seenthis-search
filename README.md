@@ -21,7 +21,7 @@ Run seenthis search from source
 (e.g. `C:\firefox-seenthis-search\` or `~/firefox-seenthis-search/`). Windows users should retain the OS'
 slash direction, and everyone should remember to include a closing slash and remove any
 trailing spaces.
-4. Save the file with seenthis search ID as it's name `seenthis_search@seenthis.net`
+4. Save the file with seenthis search ID as its name `seenthis_search@seenthis.net`
 
 Credits
 -----------------------
