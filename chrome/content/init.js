@@ -261,7 +261,7 @@ if (database.connection.transactionInProgress) database.connection.rollbackTrans
   var userExtJsURL = fileHandler.getURLSpecFromFile(userExtJs);
 
   var userScript = document.createElement("script");
-  userScript.type = "text\/javascript";
+  userScript.type = "text/javascript";
   document.currentScript.parentNode.insertBefore(userScript, document.currentScript.nextSibling);
   userScript.src = userExtJsURL;
 
@@ -288,7 +288,7 @@ if (database.connection.transactionInProgress) database.connection.rollbackTrans
 
   var userCss = document.createElement("link");
   userCss.rel = "stylesheet";
-  userCss.type = "text\/css";
+  userCss.type = "text/css";
   document.currentScript.parentNode.insertBefore(userCss, document.currentScript);
   userCss.href = userCssURL;
 
