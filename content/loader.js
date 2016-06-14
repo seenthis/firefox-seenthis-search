@@ -68,7 +68,8 @@ LoaderBase.prototype = {
     this.insertHandler.execute(bookmark);
   },
 
-  update: function(bookmarks) {
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators
+  update: function*(bookmarks) {
 
     var self = this;
 
