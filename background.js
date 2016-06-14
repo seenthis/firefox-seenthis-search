@@ -1,6 +1,6 @@
 function openView() {
 	chrome.tabs.create({
-		"url": chrome.extension.getURL("chrome/content/view.html")
+		"url": chrome.extension.getURL("content/view.html")
 	});
 }
 
