@@ -31,7 +31,7 @@ $(function() {
 				item: '<tr><td><a href="" class="url title" target="_blank"></a><br /><p class="info"></p></td><td class="tags"></td><td class="time"></td></tr>',
 				page: 10,
 				plugins: [
-					ListPagination({})
+					ListPagination({ outerWindow: 1 })
 				]
 			},
 			bookmarks
@@ -40,6 +40,8 @@ $(function() {
 		});
 	});
 
-
+	/*
+		handle update
+	*/
 
 });

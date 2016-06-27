@@ -13,6 +13,7 @@ tr>td:first-child { padding: 1px; }
 tr.focus>td { background-color: #EFEFEF; }
 tr.focus>td:first-child { background-color: #737373; }
 td p { padding: 4px 2px 2px 6px; overflow: hidden; line-height: 1.2em; max-height: 3.6em; }
+.pagination li { display: inline-block; padding: 2px; }
 strong { font-weight: normal; }
 strong.high1 { background-color: #FFFF99; }
 strong.high2 { background-color: #FFDFFF; }
