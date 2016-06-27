@@ -24,5 +24,8 @@
       "suggested_key": { "default": "Ctrl+Shift+B" },
       "description": "Open seenthis search"
     }
-  }
+  },
+  "permissions": [
+    "storage"
+  ]
 }
