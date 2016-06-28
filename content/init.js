@@ -38,11 +38,13 @@ $(function() {
 			localforage.setItem('database', bookmarks);
 			localforage.setItem('userId', SeenthisParser.getUserId(xml));
 			initList();
+			$('html').removeClass('loading');
+			alert( bookmarks.length + ' posts loaded');
 		});
 	};
-
 	localforage.getItem('database').then(function(value) {
 		if (!value) {
+			$('html').addClass('loading');
 			loadXml();
 		} else {
 			bookmarks = value;
@@ -54,6 +56,7 @@ $(function() {
 	});
 
 	$('#sync').on('click', function() {
+		$('html').addClass('loading');
 		list.clear();
 		loadXml();
 	});

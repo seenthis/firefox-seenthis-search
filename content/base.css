@@ -1,4 +1,5 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, p, blockquote, form, th, td { font-style: normal; font-weight: normal; margin: 0; padding: 0; }
+html.loading { opacity: 0.3; }
 body { font-family: Verdana,Arial,sans-serif; line-height: 1.3; background-color: #fff; margin: 5px; }
 #seens { font-size: 80%; }
 table { width: 100%; margin: 5px auto; border-collapse: collapse; }
