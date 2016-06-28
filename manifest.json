@@ -25,6 +25,9 @@
       "description": "Open seenthis search"
     }
   },
+  "options_ui": {
+    "page": "content/options.html"
+  },
   "permissions": [
     "*://seenthis.net/*",
     "storage"
