@@ -1,11 +1,9 @@
 function saveOptions(e) {
-	chrome.storage.local.set({
-		colour: document.querySelector("#pagination").value
-	});
+	localforage.setItem('pagination', document.querySelector("#pagination").value);
 }
 function restoreOptions() {
-	chrome.storage.local.get('pagination', (res) => {
-		document.querySelector("#pagination").value = res.colour || 10;
+	localforage.getItem('pagination').then(function(value) {
+		document.querySelector("#pagination").value = value || 10;
 	});
 }
 document.addEventListener('DOMContentLoaded', restoreOptions);
