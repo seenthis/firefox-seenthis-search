@@ -26,6 +26,7 @@
     }
   },
   "permissions": [
+    "*://seenthis.net/*",
     "storage"
   ]
 }

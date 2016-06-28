@@ -1,30 +1,9 @@
 $(function() {
-	
-	/*
-		charger le xml
-	*/
-	
-	//var url = 'http://seenthis.net/?page=xml_export';
-	var url = chrome.extension.getURL('content/dump.xml');
-	var bookmarks = null;
-	$.get(url, function(xml) {
-		bookmarks = SeenthisParser.parse(xml);
-			//console.log(bookmarks);
-		var id = SeenthisParser.getUserId(xml);
-		chrome.storage.local.set({userId: id});
-			//chrome.storage.local.get('userId', (res) => { console.log(res); });
-	}).done(function() {
-		$('#total,#hits').text(bookmarks.length);
-		/*
-			stocker en db
-		*/
 
+	var bookmarks, list = null;
 
-		/*
-			init listjs
-		*/
-		
-		var list = new List(
+	var initList = function() {
+		list = new List(
 			'seens', 
 			{
 				valueNames: [ 'title', { name: 'url', attr: 'href' } , 'info', 'tags', 'time' ],
@@ -38,10 +17,33 @@ $(function() {
 		).on('updated', function(list){
 			$('#hits').text(list.matchingItems.length);
 		});
+	};
+
+	var loadXml = function() {
+		var url = 'http://seenthis.net/?page=xml_export';
+		$.get(url, function(xml) {
+			bookmarks = SeenthisParser.parse(xml);
+			localforage.setItem('database', bookmarks);
+			localforage.setItem('userId', SeenthisParser.getUserId(xml));
+			initList();
+		});
+	};
+
+	localforage.getItem('database').then(function(value) {
+		if (!value) {
+			loadXml();
+		} else {
+			bookmarks = value;
+			initList();
+		}
+		$('#total,#hits').text(bookmarks.length);
+	}).catch(function(err) {
+		console.log(err);
 	});
 
-	/*
-		handle update
-	*/
+	$('#sync').on('click', function() {
+		list.clear();
+		loadXml();
+	});
 
 });
