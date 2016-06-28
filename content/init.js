@@ -10,7 +10,19 @@ $(function() {
 				item: '<tr><td><a href="" class="url title" target="_blank"></a><br /><p class="info"></p></td><td class="tags"></td><td class="time"></td></tr>',
 				page: 10,
 				plugins: [
-					ListPagination({ outerWindow: 1 })
+					ListPagination({
+						name: "paginationTop",
+						paginationClass: "paginationTop",
+						includeDirectionLinks: true,
+						leftDirectionText: 'prev',
+						rightDirectionText: 'next',
+						innerWindow: 0
+					}),
+					ListPagination({
+						name: "paginationBottom",
+						paginationClass: "paginationBottom",
+						innerWindow: 4
+					})
 				]
 			},
 			bookmarks

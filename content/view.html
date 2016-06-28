@@ -12,7 +12,7 @@
 			<input id="text" class="search" placeholder="Search" name="pattern" value="" size="80" type="text" autocomplete="off" />
 			<a id ="sync" href="#"><img src="./sync.gif" alt="Sync Bookmarks" />sync</a>
 			<table>
-				<caption><span id="hits"></span> hits / total : <span id="total"></span></caption>
+				<caption><span id="hits"></span> hits / total : <span id="total"></span><ul class="pagination paginationTop"></ul></caption>
 				<thead>
 					<tr>
 						<th class="description">Description</th>
@@ -23,12 +23,12 @@
 				<tbody class="list">
 				</tbody>
 			</table>
-			<ul class="pagination"></ul>
+			<ul class="pagination paginationBottom"></ul>
 		</div>
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="localforage.min.js"></script>
 		<script type="text/javascript" src="list.js"></script>
-		<script type="text/javascript" src="list.pagination.min.js"></script>
+		<script type="text/javascript" src="list.pagination.js"></script>
 		<script type="text/javascript" src="seenthis.js"></script>
 		<script type="text/javascript" src="init.js"></script>
 	</body>
