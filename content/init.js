@@ -33,6 +33,7 @@ $(function() {
 
 	var loadXml = function() {
 		var url = 'http://seenthis.net/?page=xml_export';
+		$('html').addClass('loading');
 		$.get(url, function(xml) {
 			bookmarks = SeenthisParser.parse(xml);
 			localforage.setItem('database', bookmarks);
@@ -42,6 +43,12 @@ $(function() {
 			alert( bookmarks.length + ' posts loaded');
 		});
 	};
+
+	var sync = function() {
+		list.clear();
+		loadXml();
+	};
+
 	localforage.getItem('database').then(function(value) {
 		if (!value) {
 			$('html').addClass('loading');
@@ -56,9 +63,26 @@ $(function() {
 	});
 
 	$('#sync').on('click', function() {
-		$('html').addClass('loading');
-		list.clear();
-		loadXml();
+		sync();
 	});
+
+	// shortcuts
+	document.addEventListener(
+		'keydown',
+		function(event) {
+			if (event.ctrlKey) {
+				switch(event.keyCode) {
+					case 37:  // Left
+						$('.paginationTop .prev').trigger('click');
+						break;
+					case 39:  // Right
+						$('.paginationTop .next').trigger('click');
+						break;
+					default:
+						break;
+				}
+			}
+		},
+	false);
 
 });
