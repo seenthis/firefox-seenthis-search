@@ -1,14 +1,14 @@
 firefox-seenthis-search
 ===========================
 
-seenthis.net IncSearch Add-ons for Firefox
+seenthis search add-on for Firefox
 
 https://addons.mozilla.org/fr/firefox/addon/seenthis-search/
 
 Usage
 -----------------------
 
-After installation, go to Firefox menu, "Tools" -> "seenthis.net search".
+After installation, click on "seenthis search" button or use CTRL + SHIFT + B shortcut.
 
 Make sure you are logged in on seenthis.net and hit the sync link to perform synchronization.
 
@@ -26,7 +26,11 @@ trailing spaces.
 Credits
 -----------------------
 
-This is an adaptation of https://github.com/onozaty/firefox-delicious-incsearch for seenthis.net, huge thx to onozaty for his original work :)
+This addon use the following libs, thanks to their authors :)
+
+* http://www.listjs.com/
+* https://jquery.com/
+* http://mozilla.github.io/localForage/
 
 License
 -----------------------
