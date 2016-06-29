@@ -5,7 +5,7 @@ body { font-family: Verdana,Arial,sans-serif; line-height: 1.3; background-color
 table { width: 100%; margin: 5px auto; border-collapse: collapse; }
 table caption { text-align: left; }
 th { padding: 2px 4px 2px 4px; border: solid 1px #737373; text-align: left; font-weight: normal; background-color: #cfcfcf; }
-th.decsription { width: 60%; }
+th.description { width: 60%; }
 th.tags,
 th.time { width: 20%; }
 td { padding: 2px 4px 2px 4px; border: solid 1px #737373; background-color: #fff; }
