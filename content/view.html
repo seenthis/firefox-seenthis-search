@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>seenthis search</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="base.css" type="text/css" />
+	</head>
+	<body>
+		<div id="seens">
+			<input id="text" class="search" placeholder="Search" name="pattern" value="" size="80" type="text" autocomplete="off" />
+			<a id ="sync" href="#"><img src="./sync.gif" alt="Sync Bookmarks" />sync</a>
+			<table>
+				<caption><span id="hits"></span> hits / total : <span id="total"></span><ul class="pagination paginationTop"></ul></caption>
+				<thead>
+					<tr>
+						<th class="description">Description</th>
+						<th class="tags">Tags</th>
+						<th class="time">Time</th>
+					</tr>
+				</thead>
+				<tbody class="list">
+				</tbody>
+			</table>
+			<ul class="pagination paginationBottom"></ul>
+		</div>
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/localforage.min.js"></script>
+		<script type="text/javascript" src="lib/list.js"></script>
+		<script type="text/javascript" src="lib/list.pagination.js"></script>
+		<script type="text/javascript" src="seenthis.js"></script>
+		<script type="text/javascript" src="init.js"></script>
+	</body>
+</html>
