@@ -20,7 +20,7 @@ Run seenthis search from source
 * click "Load Temporary Add-on"
 * open the add-on's directory and select manifest.json file
 
-Source https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Packaging_and_installation#Loading_from_disk
+Source https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Temporary_Installation_in_Firefox#Loading_from_disk
 
 Credits
 -----------------------
