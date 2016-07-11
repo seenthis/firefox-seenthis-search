@@ -29,6 +29,7 @@ $(function() {
 		).on('updated', function(list){
 			$('#hits').text(list.matchingItems.length);
 		});
+		$('#text').focus();
 	};
 
 	var loadXml = function() {
