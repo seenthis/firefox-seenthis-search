@@ -4,5 +4,11 @@
   },
   "extensionDescription": {
     "message": "This extension is search engine for seenthis.net allowing to find your posts very quickly."
+  },
+  "linkLeft": {
+    "message": "prev"
+  },
+  "linkRight": {
+    "message": "next"
   }
 }

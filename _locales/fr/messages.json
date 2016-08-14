@@ -4,5 +4,11 @@
   },
   "extensionDescription": {
     "message": "Ce module propose un moteur de recherche pour seenthis.net afin de retrouver vos posts rapidement."
+  },
+  "linkLeft": {
+    "message": "précédent"
+  },
+  "linkRight": {
+    "message": "suivant"
   }
 }

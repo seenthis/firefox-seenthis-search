@@ -21,8 +21,8 @@ $(function() {
 							name: "paginationTop",
 							paginationClass: "paginationTop",
 							includeDirectionLinks: true,
-							leftDirectionText: 'prev',
-							rightDirectionText: 'next',
+							leftDirectionText: chrome.i18n.getMessage("linkLeft"),
+							rightDirectionText: chrome.i18n.getMessage("linkRight"),
 							innerWindow: 0
 						}),
 						ListPagination({
