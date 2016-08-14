@@ -1,35 +1,43 @@
 $(function() {
 
 	var bookmarks, list = null;
+	var options = {
+		pagination: 10
+	};
 
 	var initList = function() {
-		list = new List(
-			'seens', 
-			{
-				valueNames: [ 'title', { name: 'url', attr: 'href' } , 'info', 'tags', 'time' ],
-				item: '<tr><td><a href="" class="url title" target="_blank"></a><br /><p class="info"></p></td><td class="tags"></td><td class="time"></td></tr>',
-				page: 10,
-				plugins: [
-					ListPagination({
-						name: "paginationTop",
-						paginationClass: "paginationTop",
-						includeDirectionLinks: true,
-						leftDirectionText: 'prev',
-						rightDirectionText: 'next',
-						innerWindow: 0
-					}),
-					ListPagination({
-						name: "paginationBottom",
-						paginationClass: "paginationBottom",
-						innerWindow: 4
-					})
-				]
-			},
-			bookmarks
-		).on('updated', function(list){
-			$('#hits').text(list.matchingItems.length);
+		localforage.getItem('options').then(function(value) {
+			if (value) {
+				options = value;
+			}
+			list = new List(
+				'seens',
+				{
+					valueNames: [ 'title', { name: 'url', attr: 'href' } , 'info', 'tags', 'time' ],
+					item: '<tr><td><a href="" class="url title" target="_blank"></a><br /><p class="info"></p></td><td class="tags"></td><td class="time"></td></tr>',
+					page: options.pagination,
+					plugins: [
+						ListPagination({
+							name: "paginationTop",
+							paginationClass: "paginationTop",
+							includeDirectionLinks: true,
+							leftDirectionText: 'prev',
+							rightDirectionText: 'next',
+							innerWindow: 0
+						}),
+						ListPagination({
+							name: "paginationBottom",
+							paginationClass: "paginationBottom",
+							innerWindow: 4
+						})
+					]
+				},
+				bookmarks
+			).on('updated', function(list){
+				$('#hits').text(list.matchingItems.length);
+			});
+			$('#text').focus();
 		});
-		$('#text').focus();
 	};
 
 	var loadXml = function() {

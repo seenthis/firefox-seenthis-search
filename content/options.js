@@ -1,9 +1,16 @@
+var options = {
+	pagination: 10
+};
 function saveOptions(e) {
-	localforage.setItem('pagination', document.querySelector("#pagination").value);
+	options.pagination = document.querySelector("#pagination").value;
+	localforage.setItem('options', options);
 }
 function restoreOptions() {
-	localforage.getItem('pagination').then(function(value) {
-		document.querySelector("#pagination").value = value || 10;
+	localforage.getItem('options').then(function(value) {
+		if (value) {
+			options = value;
+		}
+		document.querySelector("#pagination").value = options.pagination;
 	});
 }
 document.addEventListener('DOMContentLoaded', restoreOptions);
