@@ -1,7 +1,7 @@
 {
-  "description": "This extension is search engine for seenthis.net allowing to find your posts very quickly.",
   "manifest_version": 2,
-  "name": "seenthis search",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
   "version": "0.1.1",
   "homepage_url": "https://github.com/seenthis/firefox-seenthis-search",
   "icons": {
@@ -31,5 +31,6 @@
   "permissions": [
     "*://seenthis.net/*",
     "storage"
-  ]
+  ],
+  "default_locale": "fr"
 }
