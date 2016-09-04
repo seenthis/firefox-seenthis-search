@@ -6,12 +6,15 @@
 	<body>
 		<form>
 			<fieldset>
-				<legend>Options</legend>
-				<p>Number of posts per page</p>
+				<legend data-i18n="optionsLegend"></legend>
+				<label for="pagination" data-i18n="optionsPagination"></label>
 				<input type="text" id="pagination">
-				<button type="submit">Save</button>
+				<p>
+					<button type="submit" data-i18n="optionsSave"></button>
+				</p>
 			</fieldset>
 		</form>
+		<script src="lib/chrome-i18n.js"></script>
 		<script src="lib/localforage.min.js"></script>
 		<script src="options.js"></script>
 	</body>

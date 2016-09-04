@@ -17,6 +17,15 @@
   "next": {
     "message": "next"
   },
+  "optionsLegend": {
+    "message": "Options"
+  },
+  "optionsPagination": {
+    "message": "Number of posts per page"
+  },
+  "optionsSave": {
+    "message": "Save"
+  },
   "prev": {
     "message": "prev"
   },
