@@ -1,14 +1,38 @@
 {
+  "description": {
+    "message": "Description"
+  },
   "extensionName": {
     "message": "seenthis search"
   },
   "extensionDescription": {
     "message": "Ce module propose un moteur de recherche pour seenthis.net afin de retrouver vos posts rapidement."
   },
-  "linkLeft": {
+  "hits": {
+    "message": "résultats"
+  },
+  "messageLoaded": {
+    "message": "posts chargés"
+  },
+  "next": {
+    "message": "suivant"
+  },
+  "prev": {
     "message": "précédent"
   },
-  "linkRight": {
-    "message": "suivant"
+  "search": {
+    "message": "Rechercher"
+  },
+  "sync": {
+    "message": "Synchroniser"
+  },
+  "tags": {
+    "message": "Tags"
+  },
+  "time": {
+    "message": "Date"
+  },
+  "total": {
+    "message": "total"
   }
 }

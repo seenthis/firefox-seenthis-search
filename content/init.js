@@ -18,16 +18,16 @@ $(function() {
 					page: options.pagination,
 					plugins: [
 						ListPagination({
-							name: "paginationTop",
-							paginationClass: "paginationTop",
+							name: 'paginationTop',
+							paginationClass: 'paginationTop',
 							includeDirectionLinks: true,
-							leftDirectionText: chrome.i18n.getMessage("linkLeft"),
-							rightDirectionText: chrome.i18n.getMessage("linkRight"),
+							leftDirectionText: chrome.i18n.getMessage('prev'),
+							rightDirectionText: chrome.i18n.getMessage('next'),
 							innerWindow: 0
 						}),
 						ListPagination({
-							name: "paginationBottom",
-							paginationClass: "paginationBottom",
+							name: 'paginationBottom',
+							paginationClass: 'paginationBottom',
 							innerWindow: 4
 						})
 					]
@@ -49,7 +49,7 @@ $(function() {
 			localforage.setItem('userId', SeenthisParser.getUserId(xml));
 			initList();
 			$('html').removeClass('loading');
-			alert( bookmarks.length + ' posts loaded');
+			alert( bookmarks.length + ' ' + chrome.i18n.getMessage('messageLoaded'));
 		});
 	};
 

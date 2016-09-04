@@ -1,14 +1,38 @@
 {
+  "description": {
+    "message": "Description"
+  },
   "extensionName": {
     "message": "seenthis search"
   },
   "extensionDescription": {
     "message": "This extension is search engine for seenthis.net allowing to find your posts very quickly."
   },
-  "linkLeft": {
+  "hits": {
+    "message": "hits"
+  },
+  "messageLoaded": {
+    "message": "posts loaded"
+  },
+  "next": {
+    "message": "next"
+  },
+  "prev": {
     "message": "prev"
   },
-  "linkRight": {
-    "message": "next"
+  "search": {
+    "message": "Search"
+  },
+  "sync": {
+    "message": "Synchronize"
+  },
+  "tags": {
+    "message": "Tags"
+  },
+  "time": {
+    "message": "Date"
+  },
+  "total": {
+    "message": "total"
   }
 }
