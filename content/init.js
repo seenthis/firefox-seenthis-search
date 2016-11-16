@@ -41,7 +41,7 @@ $(function() {
 	};
 
 	var loadXml = function() {
-		var url = 'http://seenthis.net/?page=xml_export';
+		var url = 'http://seenthis.net/?page=xml_export&reponses=non';
 		$('html').addClass('loading');
 		$.get(url, function(xml) {
 			bookmarks = SeenthisParser.parse(xml);
