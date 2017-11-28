@@ -12,7 +12,7 @@
 			<input id="text" class="search" data-i18n="placeholder=search" name="pattern" value="" size="80" type="text" autocomplete="off" />
 			<a id ="sync" href="#"><img src="./sync.gif" alt="" /><span data-i18n="sync" /></a>
 			<table>
-				<caption><span id="hits"></span> <span data-i18n="hits"></span> / <span data-i18n="total"></span> : <span id="total"></span><ul class="pagination paginationTop"></ul></caption>
+				<caption><div class="resume"><span id="hits"></span> <span data-i18n="hits"></span> / <span data-i18n="total"></span> : <span id="total"></span></div><ul class="pagination paginationTop"></ul></caption>
 				<thead>
 					<tr>
 						<th class="description" data-i18n="description"></th>
@@ -22,14 +22,8 @@
 				</thead>
 				<tbody class="list">
 				</tbody>
-				<tfoot>
-					<tr>
-						<th colspan="3">
-							<ul class="pagination paginationBottom"></ul>
-						</th>
-					</tr>
-				</tfoot>
 			</table>
+			<ul class="pagination paginationBottom"></ul>
 		</div>
 		<script type="text/javascript" src="lib/chrome-i18n.js"></script>
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
