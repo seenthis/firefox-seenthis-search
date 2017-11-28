@@ -2,17 +2,9 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, p, blockquote, f
 html.loading { opacity: 0.3; }
 body { font-family: Verdana,Arial,sans-serif; line-height: 1.3; background-color: #fff; margin: 5px; }
 #seens { font-size: 80%; }
-table { width: 100%; margin: 5px auto; border-collapse: collapse; }
-table caption { text-align: left; }
-th { padding: 2px 4px 2px 4px; border: solid 1px #737373; text-align: left; font-weight: normal; background-color: #cfcfcf; }
 th.description { width: 60%; }
 th.tags,
 th.time { width: 20%; }
-td { padding: 2px 4px 2px 4px; border: solid 1px #737373; background-color: #fff; }
-tr>th:first-child,
-tr>td:first-child { padding: 1px; }
-tr.focus>td { background-color: #efefef; }
-tr.focus>td:first-child { background-color: #737373; }
 td p { padding: 4px 2px 2px 6px; overflow: hidden; line-height: 1.2em; max-height: 3.6em; }
 .pagination li { display: inline-block; padding: 2px; }
 .pagination li.disabled { opacity: 0.5; }
@@ -22,3 +14,53 @@ td p { padding: 4px 2px 2px 6px; overflow: hidden; line-height: 1.2em; max-heigh
 .paginationTop li:not(.prev):not(.next) { display: none; }
 .paginationBottom { text-align: center; }
 img { vertical-align: middle; border: none; }
+
+/*!
+ * # Semantic UI 2.2.12 - Table (adapted)
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+table { width: 100%; background: #FFFFFF; margin: 1em 0; border: 1px solid rgba(34,36,38,0.15); box-shadow: none; border-radius: 0.28571429rem; text-align: left; color: rgba(0,0,0,0.87); border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+table:first-child { margin-top: 0; }
+table:last-child { margin-bottom: 0; }
+table th,
+table td { -webkit-transition: background 0.1s ease,color 0.1s ease; transition: background 0.1s ease,color 0.1s ease; overflow: hidden; text-overflow: ellipsis; }
+table thead { box-shadow: none; }
+table thead th { cursor: auto; background: #F9FAFB; text-align: inherit; color: rgba(0,0,0,0.87); padding: 0.92857143em 0.78571429em; vertical-align: inherit; font-style: none; font-weight: bold; text-transform: none; border-bottom: 1px solid rgba(34,36,38,0.1); border-left: none; }
+table thead tr > th:first-child { border-left: none; }
+table thead tr:first-child > th:first-child { border-radius: 0.28571429rem 0 0 0; }
+table thead tr:first-child > th:last-child { border-radius: 0 0.28571429rem 0 0; }
+table thead tr:first-child > th:only-child { border-radius: 0.28571429rem 0.28571429rem 0 0; }
+table tfoot { box-shadow: none; }
+table tfoot th { cursor: auto; border-top: 1px solid rgba(34,36,38,0.15); background: #F9FAFB; text-align: inherit; color: rgba(0,0,0,0.87); padding: 0.78571429em 0.78571429em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; }
+table tfoot tr > th:first-child { border-left: none; }
+table tfoot tr:first-child > th:first-child { border-radius: 0 0 0 0.28571429rem; }
+table tfoot tr:first-child > th:last-child { border-radius: 0 0 0.28571429rem 0; }
+table tfoot tr:first-child > th:only-child { border-radius: 0 0 0.28571429rem 0.28571429rem; }
+table tr td { border-top: 1px solid rgba(34,36,38,0.1); }
+table tr:first-child td { border-top: none; }
+table td { padding: 0.78571429em 0.78571429em; text-align: inherit; }
+table tr th,
+table tr td { border-left: 1px solid rgba(34,36,38,0.1); }
+table tr th:first-child,
+table tr td:first-child { border-left: none; }
+@media only screen and(max-width:767px) {
+	table { width: 100%; }
+	table tbody,
+	table tr,
+	table tr > th,
+	table tr > td { width: auto!important; display: block!important; }
+	table { padding: 0; }
+	table thead { display: block; }
+	table tfoot { display: block; }
+	table tr { padding-top: 1em; padding-bottom: 1em; box-shadow: 0 -1px 0 0 rgba(0,0,0,0.1) inset!important; }
+	table tr > th,
+	table tr > td { background: none; border: none!important; padding: 0.25em 0.75em!important; box-shadow: none!important; }
+	table th:first-child,
+	table td:first-child { font-weight: bold; }
+}
