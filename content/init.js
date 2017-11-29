@@ -14,7 +14,7 @@ $(function() {
 				'seens',
 				{
 					valueNames: [ 'title', { name: 'url', attr: 'href' } , 'info', 'tags', 'time' ],
-					item: '<tr><td><a href="" class="url title" target="_blank"></a><br /><p class="info"></p></td><td class="tags"></td><td class="time"></td></tr>',
+					item: '<tr><td><a href="" class="url title" target="_blank" rel="external noopener noreferrer"></a><br /><p class="info"></p></td><td class="tags"></td><td class="time"></td></tr>',
 					page: options.pagination,
 					plugins: [
 						ListPagination({
