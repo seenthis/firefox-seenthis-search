@@ -16,7 +16,7 @@ var SeenthisParser = {
 			var tags = message.getElementsByTagName('tag');
 			bookmark.tags = '';
 			for (var j = 0, k = tags.length; j < k; j++) {
-				bookmark.tags += '[' + tags[j].childNodes[0].nodeValue  + ']' + (j < (k -1) ? ' ' : '');
+				bookmark.tags += '<a href="https://seenthis.net/tag/'+ tags[j].childNodes[0].nodeValue +'" target="_blank" rel="external noopener noreferrer">#' + tags[j].childNodes[0].nodeValue  + '</a>' + (j < (k -1) ? ' ' : '');
 			}
 			list.push(bookmark);
 		}
