@@ -8,7 +8,7 @@ https://addons.mozilla.org/fr/firefox/addon/seenthis-search/
 Usage
 -----------------------
 
-After installation, click on "seenthis search" button or use CTRL + SHIFT + B shortcut.
+After installation, click on "seenthis search" button or use CTRL + SHIFT + S shortcut.
 
 Make sure you are logged in on seenthis.net and hit the sync link to perform synchronization.
 

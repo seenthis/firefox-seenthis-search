@@ -21,7 +21,7 @@
   },
   "commands": {
     "openview": {
-      "suggested_key": { "default": "Ctrl+Shift+B" },
+      "suggested_key": { "default": "Ctrl+Shift+S" },
       "description": "Open seenthis search"
     }
   },
